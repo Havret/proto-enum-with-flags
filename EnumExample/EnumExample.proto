@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.helloworld";
+option java_outer_classname = "HelloWorldProto";
+option objc_class_prefix = "HLW";
+
+package enum_example;
+
+// The greeting service definition.
+service DeploymentCalendar {
+    // Sends a greeting
+    rpc GetDeploymentDays (DeploymentDaysRequest) returns (DeploymentDaysReply) {}
+}
+
+// The request message containing the user's name.
+message DeploymentDaysRequest {
+    int32 numberOfDeployments = 1;
+}
+
+// The response message containing the greetings
+message DeploymentDaysReply {
+    int32 deploymentDays = 1;
+}

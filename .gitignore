@@ -1,0 +1,8 @@
+.idea/
+.vs/
+EnumExample/bin/
+EnumExample/obj/
+EnumExampleClient/bin/
+EnumExampleClient/obj/
+EnumExampleServer/bin/
+EnumExampleServer/obj/
